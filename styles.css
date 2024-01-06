@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+====================================================
+Custom styling and topography
+=====================================================
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: #867070;
+
+}
+
+thead {
+    background-color: #D5B4B4;
+}
+tbody, tfoot {
+    background-color: #E4D0D0;
+}
+
+h1 {
+    font-family: 'Rubik Maps';
+    font-size: 48px;
+    color: #F5EBEB;
+    line-height: 1.5;
+    padding: 20px 20px;
+    text-align: center;
+}
+th {
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 24px;
+    color: #867070;
+    padding: 20px 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+td {
+    font-family: 'Zeyada';
+    font-size: 28px;
+    color: #864d4d;
+    padding: 20px 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th, td {
+    border-bottom: 3px #867070;
+    border-style: double;
+    height: 100px;
+}
+
+
+
+th:first-child {
+    border-top-left-radius: 25px;
+  }
+
+  th:last-child {
+    border-top-right-radius: 25px;
+  }
+
+  tfoot tr:first-child td:first-child {
+    border-bottom-left-radius: 25px;
+  }
+
+  tfoot tr:first-child td:last-child {
+    border-bottom-right-radius: 25px;
+  }
+
+
+.lead {
+    color: rgba(207, 53, 2, 0.523);
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+/*
+==============================================================
+Container
+===============================================================
+*/
+.container {
+    width: 960px;
+    margin: 20px auto;
+}
+/*
+===============================================================
+Media
+===============================================================
+*/
+img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    transition: transform .2s;
+    margin:0 auto;
+    border-radius: 10px;
+}
+
+img:hover{
+    transform:scale(2.5);
+}
+video {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    margin: 0 auto;
+    transition: transform .2s;
+}
+
+video:hover {
+    transform: scale(2.5);
+}
